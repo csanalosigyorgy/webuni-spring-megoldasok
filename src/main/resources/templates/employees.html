@@ -27,11 +27,11 @@
 	<br><br>
 	
 	<form th:action="@{/employees}" method="post" th:object="${newEmployee}">
-		Id: <input th:field="*{employeeId}" /><br>
-		Name: <input th:field="*{name}" /><br>
-		Title: <input th:field="*{jobTitle}" /><br>
-		Salary: <input th:field="*{salary}" /><br>
-		Entry date: <input th:field="*{dateOfStartWork}" /><br>
+		Id: <input th:field="*{employeeId}" /><br/>
+		Name: <input th:field="*{name}" /><br/>
+		Title: <input th:field="*{jobTitle}" /><br/>
+		Salary: <input th:field="*{salary}" /><br/>
+		Entry date: <input th:field="*{dateOfStartWork}" /><br/>
 		<input type="submit" value="Add" />
 	</form>
 
