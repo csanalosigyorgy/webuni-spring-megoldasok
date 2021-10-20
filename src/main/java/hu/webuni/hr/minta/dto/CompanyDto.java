@@ -3,12 +3,18 @@ package hu.webuni.hr.minta.dto;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 
 public class CompanyDto {
 	
+	@JsonView(View.BaseData.class)
 	private Long id;
+	@JsonView(View.BaseData.class)
 	private int registrationNumber;
+	@JsonView(View.BaseData.class)
 	private String name;
+	@JsonView(View.BaseData.class)
 	private String address;
 	
 	List<EmployeeDto> employees = new ArrayList<>();
